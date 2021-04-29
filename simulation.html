@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="./simulation.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <title>Electric simulations</title>
+  </head>
+  <body>
+    <div class="settings">
+      <div class="btn">
+        <div class="icon">
+          <input type="number" placeholder="8" min="5" max="40" id="mass" />
+        </div>
+        <div class="text"><label for="number">Mass</label></div>
+      </div>
+      <div class="btn">
+        <div class="icon">
+          <input
+            type="number"
+            id="charge"
+            placeholder="100"
+            min="-400"
+            max="400"
+            step="5"
+            id="charge"
+          />
+        </div>
+        <div class="text"><label for="number">Charge</label></div>
+      </div>
+
+      <div class="btn" id="fixed">
+        <div class="icon"><i class="fas fa-hammer"></i></div>
+        <div class="text">Fixed</div>
+      </div>
+      <div class="btn" id="clear-fixed">
+        <div class="icon"><i class="fas fa-trash-alt"></i></div>
+        <div class="text">Clear Fixed</div>
+      </div>
+      <div class="btn" id="rest">
+        <div class="icon"><i class="fas fa-power-off"></i></div>
+        <div class="text">Rest</div>
+      </div>
+      <div class="btn" id="gravity">
+        <div class="icon"><i class="fab fa-grav"></i></div>
+        <div class="text">Gravity</div>
+      </div>
+      <div class="btn" id="undo">
+        <div class="icon"><i class="fas fa-undo"></i></div>
+        <div class="text">undo</div>
+      </div>
+      <div class="btn" id="pause">
+        <div class="icon"><i class="fas fa-pause"></i></div>
+        <div class="text">Pause</div>
+      </div>
+      <div class="btn" id="reset">
+        <div class="icon"><i class="fas fa-eraser"></i></div>
+        <div class="text">Reset</div>
+      </div>
+    </div>
+    <canvas id="canvas"></canvas>
+    <script src="./classes/vector.js"></script>
+    <script src="./classes/particle.js"></script>
+    <script src="./simulation.js"></script>
+  </body>
+</html>
