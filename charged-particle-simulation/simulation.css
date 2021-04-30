@@ -78,13 +78,13 @@ body {
   background-color: #96a9f4;
   color: #455aa1;
   border-color: #96a9f4;
-  transition: all 0.5s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .btn.active .text {
   background-color: #96a9f4;
   color: #455aa1;
-  transition: all 0.5s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 canvas {
