@@ -42,6 +42,10 @@ function Init() {
   setChargeVal()
   arrow = 'arrow'
   genarateRandomPositions()
+
+  buttons.forEach((btn) => {
+    btn.classList = ''
+  })
 }
 
 function animate() {

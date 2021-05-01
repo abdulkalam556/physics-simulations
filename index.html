@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Particles</title>
+  </head>
+  <body>
+    <div class="title">
+      <video autoplay muted loop id="myVideo">
+        <source src="./assets/background.mp4" type="video/mp4" />
+      </video>
+      <div class="heading">
+        <h1>Particle Simulations</h1>
+        <p class="subtitle">Now Try Experimenting Physics From Home</p>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <div class="nav-container">
+        <h1 class="logo"><a href="./index.html">Particles</a></h1>
+        <ul class="menu">
+          <li><i class="fas fa-bars"></i>
+          </li>
+        </ul>
+        <ul class="menu-list">
+          <li>
+            <a href="#contribute"><i class="fab fa-github"> Github</i></a>
+          </li>
+          <li>
+            <a href="#work"><i class="fas fa-shopping-bag"> Products</i></a>
+          </li>
+          <li>
+            <a href="#tutorial"><i class="fas fa-video"> Tutorials</i></a>
+          </li>
+          <li>
+            <a href="#contact"><i class="fas fa-address-book"> Contact</i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="contribute" id="contribute">
+      <div class="content">
+        <h3>Contribute</h3>
+        <p>
+          want to contibute to the project, Or Clone and build your version of
+          it
+        </p>
+        <p>
+          No Third Party libraries are used, everything was built from scratch
+        </p>
+      </div>
+      <div class="action-btn">
+        <a
+          href="https://github.com/abdulkalam556/physics-simulations"
+          target="_blank"
+          ><i class="fab fa-github"></i> Join Us</a
+        >
+      </div>
+    </div>
+
+    <div class="works" id="work">
+      <div class="content">
+        <div class="heading">
+          <h3>Our Simulations</h3>
+          <p>start your experiments now</p>
+        </div>
+        <div class="info">
+          <div class="card">
+            <img src="./assets/charged-particles.gif" alt="charged particles" />
+            <h4>Charged Particles</h4>
+            <div class="points">
+              <ul>
+                <li>
+                  <i class="fas fa-check-square"></i>You can have fixed
+                  particles
+                </li>
+                <li>
+                  <i class="fas fa-check-square"></i>You can turn on gravity
+                </li>
+                <li>
+                  <i class="fas fa-check-square"></i>control particles, bring
+                  them to rest
+                </li>
+              </ul>
+            </div>
+            <div class="card-btn">
+              <a href="./charged-particle-simulation/simulation.html"
+                >Charge Up !</a
+              >
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./assets/electric_field.gif" alt="Electric Field" />
+            <h4>Electric Field</h4>
+            <div class="points">
+              <ul>
+                <li>
+                  <i class="fas fa-check-square"></i>insert particles you wish
+                </li>
+                <li>
+                  <i class="fas fa-check-square"></i>move particles freely on
+                  grid
+                </li>
+                <li>
+                  <i class="fas fa-check-square"></i>note your observations
+                </li>
+              </ul>
+            </div>
+            <div class="card-btn">
+              <a href="./electric-field-simulation/simulation.html"
+                >Build Field</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tutorials" id="tutorial">
+      <div class="heading">
+        <h3>Tutorials</h3>
+        <p>Get most out our simulations</p>
+      </div>
+
+      <div class="iframe-container">
+        <iframe class="video1" width="560" height="315" src="https://www.youtube.com/embed/nUGu9bQBRgE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="video2"width="560" height="315" src="https://www.youtube.com/embed/6DBR-8YKU9U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="footnote" id="contact">
+      <div class="footer">
+        <h3>Particles</h3>
+        <ul>
+          <li>
+            <a href="mailto:abdulkalams2015@gmail.com" target="_blank"
+              ><i class="fas fa-envelope"></i></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/abdul-kalam-azad-shaik-8a6446171"
+              target="_blank"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/abdulkalam556" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <hr />
+      <div class="copyrights">© 2021 PARTICLES. ALL RIGHTS RESERVED.</div>
+    </div>
+
+    <div class="content"></div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

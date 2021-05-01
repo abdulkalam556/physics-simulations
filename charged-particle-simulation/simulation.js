@@ -38,6 +38,8 @@ function Init() {
   particles = []
   t0 = new Date().getTime()
   ctx.clearRect(0, 0, canvas.width, canvas.height)
+  chargeEl.value = charge
+  massEl.value = mass
 }
 
 function electricForce(k, q1, q2, r) {
