@@ -17,6 +17,13 @@ class Particle {
     ctx.arc(this.position.x, this.position.y, this.radius, 0, Math.PI * 2)
     ctx.fillStyle = this.color
     ctx.fill()
+
+    if (this.fixed) {
+      ctx.beginPath()
+      ctx.arc(this.position.x, this.position.y, 2, 0, Math.PI * 2)
+      ctx.fillStyle = 'black'
+      ctx.fill()
+    }
   }
 
   update(ctx, dt, calcForces, index) {

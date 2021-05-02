@@ -107,6 +107,13 @@ function updateSampleParticle() {
   ctx.arc(position.x, position.y, radius, 0, Math.PI * 2)
   ctx.fillStyle = getColor(charge)
   ctx.fill()
+
+  if (fixed) {
+    ctx.beginPath()
+    ctx.arc(position.x, position.y, 2, 0, Math.PI * 2)
+    ctx.fillStyle = 'black'
+    ctx.fill()
+  }
 }
 
 // adding charge particles to the system
